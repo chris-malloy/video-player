@@ -18,15 +18,21 @@ npm install
 
 ## Testing
 
-Snapshot testing is done with Jest and assertion testing is done with Enzyme.
+Snapshot testing is done with Jest.  Jest ships with React but if you don't have it installed for some reason you can run this script:
 
 ```sh
 npm install --save-dev jest babel-jest babel-preset-env babel-preset-react react-test-renderer
 ```
 
+Install Babel dependecies to use with Jest
+
 ```sh
-npm i --save-dev enzyme enzyme-adapter-react-16
+npm install --save-dev babel-jest babel-core
 ```
+
+### Unique Dependecies
+
+* youtube-api-search - Used to pull data from YouTube.
 
 ### Challenges and Solutions
 

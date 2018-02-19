@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: VideoListItem VideoListItem renders correctly 1`] = `
+<div>
+  hi
+</div>
+`;
