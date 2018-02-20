@@ -28,12 +28,6 @@ Snapshot testing is done with Jest.  Jest ships with React but if you don't have
 npm install --save-dev jest babel-jest babel-preset-env babel-preset-react react-test-renderer
 ```
 
-Install Babel dependecies to use with Jest
-
-```sh
-npm install --save-dev babel-jest babel-core
-```
-
 ### Unique Dependecies
 
 * youtube-api-search - Used to pull data from YouTube.
@@ -89,4 +83,4 @@ This could be improved even more by adding in a temporary component that is simi
 
 ### Acknowledgements
 
-Stephen Grider, thank you for your course.  It was a great way to take my React knowledge to the next level.
+Stephen Grider, thank you for your course.  It was a great way to take my React knowledge to the next level.  I'm looking forward to the rest of the course.
