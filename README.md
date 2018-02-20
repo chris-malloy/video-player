@@ -28,7 +28,7 @@ Snapshot testing is done with Jest.  Jest ships with React but if you don't have
 npm install --save-dev jest babel-jest babel-preset-env babel-preset-react react-test-renderer
 ```
 
-### Unique Dependecies
+## Unique Dependecies
 
 * youtube-api-search - Used to pull data from YouTube.
 
