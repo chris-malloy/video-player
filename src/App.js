@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/SearchBar';
+import VideoDetail from './components/VideoDetail';
 import VideoList from './components/VideoList';
 
 import config from './config/config';
@@ -11,17 +12,27 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { videos: [] };
+    this.state = { 
+      videos: [],
+      selectedVideo: null
 
-    YTSearch({ key: API_KEY, term: 'surfboards' }, (videos) => {
-      this.setState({ videos });
+    };
+
+    YTSearch({ key: API_KEY, term: 'smite' }, (videos) => {
+      this.setState({ 
+        videos: videos,
+        selectedVideo: videos[0]
+       });
     });
   }
   render() {
     return (
-      <div>
+      <div className="container">
         <SearchBar />
-        <VideoList videos={this.state.videos} />
+        <VideoDetail video={this.state.selectedVideo} />
+        <VideoList 
+          onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+          videos={this.state.videos} />
       </div>
     );
   }
